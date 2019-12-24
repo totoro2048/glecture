@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h3>학점매기기 </h3>
+            <hr>
+            <script>
+                var grade;
+                var score = prompt("점수를 입력하세요",100);
+                score = parseInt(score); 
+                swiitch(score){
+                    case score == 100
+                    grade = "A";
+                    break;
+                    case score == 90
+                    grade = "B";
+                    break;
+                    case score == 80
+                    grade = "C";
+                    break;
+                    case score == 70
+                    grade = "D";
+                    break;
+                    default
+                    grade = "F";
+                }
+               /*  if(score >= 90)
+                     grade = "A";
+                 else if(score>=80)
+                     grade = "B";
+                 else if(score>=70)
+                     grade = "c";
+                 else if(score>=60)
+                     grade = "D";
+                 else
+                     grade = "f";*/
+                    document.write(`${score}는${grade}입니다.<br>`);
+            </script>
+        </body>
+    </head>
+</html>
